@@ -36,6 +36,7 @@ class Compile{
         let fragment = document.createDocumentFragment();
         let firstChild;
         while(firstChild = el.firstChild){
+            // appendChild => move dom
             fragment.appendChild(firstChild);
         }
         return fragment; //内存中的节点
